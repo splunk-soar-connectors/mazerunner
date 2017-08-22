@@ -25,8 +25,6 @@ import uuid  # noqa
 
 import mazerunner  # noqa
 
-requests.packages.urllib3.disable_warnings()
-
 
 def _json_fallback(obj):
     if isinstance(obj, datetime.datetime):

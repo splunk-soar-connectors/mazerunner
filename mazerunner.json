@@ -7,12 +7,12 @@
     "type": "deception",
     "license": "Copyright (c) Cymmetria",
     "main_module" : "mazerunner_connector.pyc",
-    "app_version": "1.0.1",
+    "app_version": "1.1.0",
     "utctime_updated": "2016-12-29T01:23:45.000000Z",
     "product_vendor": "Cymmetria",
     "product_name": "MazeRunner",
     "product_version_regex": ".*",
-    "min_phantom_version": "2.0.264",
+    "min_phantom_version": "3.0.190",
     "logo": "cymmetria-logo.png",
     "configuration": {
           "mazerunner_server": {
