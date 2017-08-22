@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: mazerunner-sdk
+Version: 1.0.0
+Summary: MazeRunner SDK
+Home-page: https://github.com/Cymmetria/mazerunner_sdk_python
+Author: Cymmetria
+Author-email: publicapi@cymmetria.com
+License: BSD 3-Clause
+Download-URL: https://github.com/Cymmetria/mazerunner_sdk_python/tarball/1.0.0
+Keywords: cymmetria,mazerunner,sdk,api
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: requests-hawk
+
+UNKNOWN
+
+

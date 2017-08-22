@@ -1,0 +1,4 @@
+MAZERUNNER_SERVER = "mazerunner_server"
+MAZERUNNER_KEY_ID = "key_id"
+MAZERUNNER_SECRET = "secret"
+MAZERUNNER_CRT_FILE = None
