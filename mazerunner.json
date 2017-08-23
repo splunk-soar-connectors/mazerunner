@@ -3,7 +3,7 @@
     "name"      : "Cymmetria MazeRunner",
     "description" : "MazeRunner App",
     "publisher": "Cymmetria",
-    "package_name": "cymmetria_mazerunner",
+    "package_name": "phantom_cymmetriamazerunner",
     "type": "deception",
     "license": "Copyright (c) Cymmetria",
     "main_module" : "mazerunner_connector.pyc",
@@ -51,6 +51,10 @@
         "read_only": true,
         "parameters": {},
         "output": [
+          {
+            "data_path": "action_result.status",
+            "data_type": "string"
+          },
           {
             "data_path": "action_result.data.msi_file",
             "data_type": "string"

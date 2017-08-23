@@ -2,7 +2,6 @@ import phantom.app as phantom
 
 from phantom.base_connector import BaseConnector
 from phantom.action_result import ActionResult
-import requests
 from requests import ConnectionError
 import os
 
