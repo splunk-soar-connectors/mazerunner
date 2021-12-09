@@ -1,12 +1,12 @@
 {
-    "appid"       : "5858f36e-adb3-4d80-a3e9-fe754dd307c1",
-    "name"      : "Cymmetria MazeRunner",
-    "description" : "MazeRunner App",
+    "appid": "5858f36e-adb3-4d80-a3e9-fe754dd307c1",
+    "name": "Cymmetria MazeRunner",
+    "description": "MazeRunner App",
     "publisher": "Cymmetria",
     "package_name": "phantom_cymmetriamazerunner",
     "type": "deception",
     "license": "Copyright (c) Cymmetria",
-    "main_module" : "mazerunner_connector.pyc",
+    "main_module": "mazerunner_connector.pyc",
     "app_version": "1.1.0",
     "utctime_updated": "2016-12-29T01:23:45.000000Z",
     "product_vendor": "Cymmetria",
@@ -15,56 +15,95 @@
     "min_phantom_version": "3.0.190",
     "logo": "cymmetria-logo.png",
     "configuration": {
-          "mazerunner_server": {
+        "mazerunner_server": {
             "description": "Server IP/Hostname",
             "data_type": "string",
             "required": true
-          },
-          "key_id": {
+        },
+        "key_id": {
             "description": "Key ID",
             "data_type": "string",
             "required": true
-          },
-          "secret": {
+        },
+        "secret": {
             "description": "Secret",
             "data_type": "string",
             "required": true
-          }
+        }
     },
     "actions": [
-      {
-        "action": "test connectivity",
-        "description": "Validate the asset configuration for connectivity.",
-        "type": "test",
-        "identifier": "test_asset_connectivity",
-        "read_only": true,
-        "parameters": {
+        {
+            "action": "test connectivity",
+            "description": "Validate the asset configuration for connectivity.",
+            "type": "test",
+            "identifier": "test_asset_connectivity",
+            "read_only": true,
+            "parameters": {},
+            "output": [],
+            "versions": "EQ(*)"
         },
-        "output": [],
-        "versions":"EQ(*)"
-      },
-      {
-        "action": "create breadcrumbs",
-        "description": "Prepare the breadcrumb file for installation",
-        "type": "generic",
-        "identifier": "create_breadcrumb_file",
-        "read_only": true,
-        "parameters": {},
-        "output": [
-          {
-            "data_path": "action_result.status",
-            "data_type": "string"
-          },
-          {
-            "data_path": "action_result.data.msi_file",
-            "data_type": "string"
-          },
-          {
-            "data_path": "action_result.data.*.status",
-            "data_type": "string"
-          }
-        ],
-        "versions":"EQ(*)"
-      }
-    ]
+        {
+            "action": "create breadcrumbs",
+            "description": "Prepare the breadcrumb file for installation",
+            "type": "generic",
+            "identifier": "create_breadcrumb_file",
+            "read_only": true,
+            "parameters": {},
+            "output": [
+                {
+                    "data_path": "action_result.status",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "action_result.data.msi_file",
+                    "data_type": "string"
+                },
+                {
+                    "data_path": "action_result.data.*.status",
+                    "data_type": "string"
+                }
+            ],
+            "versions": "EQ(*)"
+        }
+    ],
+    "pip_dependencies": {
+        "wheel": [
+            {
+                "module": "certifi",
+                "input_file": "wheels/certifi-2021.5.30-py2.py3-none-any.whl"
+            },
+            {
+                "module": "enum34",
+                "input_file": "wheels/enum34-1.1.10-py2-none-any.whl"
+            },
+            {
+                "module": "funcsigs",
+                "input_file": "wheels/funcsigs-1.0.2-py2.py3-none-any.whl"
+            },
+            {
+                "module": "ipaddress",
+                "input_file": "wheels/ipaddress-1.0.23-py2.py3-none-any.whl"
+            },
+            {
+                "module": "mock",
+                "input_file": "wheels/mock-3.0.5-py2.py3-none-any.whl"
+            },
+            {
+                "module": "nose",
+                "input_file": "wheels/nose-1.3.7-py2-none-any.whl"
+            },
+            {
+                "module": "pyOpenSSL",
+                "input_file": "wheels/pyOpenSSL-19.1.0-py2.py3-none-any.whl"
+            },
+            {
+                "module": "pycparser",
+                "input_file": "wheels/pycparser-2.21-py2.py3-none-any.whl"
+            },
+            {
+                "module": "six",
+                "input_file": "wheels/six-1.16.0-py2.py3-none-any.whl"
+            }
+        ]
+    }
 }
